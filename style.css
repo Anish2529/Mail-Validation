@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:Roboto Bold ;
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+
+    background-color:hsl(234, 29%, 20%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container  {
+    width: 65%;
+
+    background-color: white;
+    border-radius: 35px;
+    padding: 24px 24px 24px 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    box-shadow: 17px 17px 20px hsla(0, 0%, 0%, 0.15);
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.text h1{
+    font-family:Roboto Bold ;
+    font-size: 57px;
+    color: hsl(234, 29%, 20%);
+}
+.text p{
+    font-family:Roboto;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.list{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    margin-top: 20px;
+}
+.point{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.point p{
+    font-family:Roboto Bold;
+    font-size: 12px;
+    color: hsl(234, 29%, 20%);
+}
+.point .check{
+    color: hsl(4, 100%, 67%);
+    display: none;
+}
+input{
+    width: 100%;
+    height: 55px;
+    background-color: transparent;
+
+    border: 1px solid hsl(231, 7%, 60%);
+    border-radius: 10px;
+    padding: 20px;
+    color: hsl(234, 29%, 20%);
+
+    outline: none;
+}
+
+
+.btn{
+    margin-top: 12px;
+
+    width: 100%;
+    height: 55px;
+    background-color: hsl(234, 29%, 20%);
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    font-family:Roboto Bold;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+.active{
+    background-color: hsla(4, 100%, 67%, 0.25) !important;
+    border: 1px solid hsl(4, 100%, 67%);
+    
+}
+.active::placeholder{
+    color: hsl(4, 100%, 67%);
+}
+input:hover{
+    border: 1px solid hsl(235, 18%, 26%);
+    color: hsl(235, 18%, 26%);
+}
+.btn:hover{
+    background: linear-gradient(to left, tomato, #ff5476);
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+
+
+.submited  {
+    width: 35%;
+
+    background-color: white;
+    border-radius: 15px;
+    padding: 48px 64px 64px 64px;
+
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+
+
+    box-shadow: 17px 17px 20px hsla(0, 0%, 0%, 0.15);
+
+}
+.submited img {
+    width: 64px;
+    height: 64px;
+}
+.submited h1{
+    font-family:Roboto Bold ;
+    font-size: 57px;
+    color: hsl(234, 29%, 20%);
+    line-height: 58px;
+}
+.submited p{
+    font-family:Roboto;
+    font-size: 16px;
+    color: hsl(234, 29%, 20%);
+    line-height: 150%;
+}
+.submited-btn{
+    margin-top: 5px;
+
+    width: 100%;
+    height: 55px;
+    background-color: hsl(234, 29%, 20%);
+
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    font-family:Roboto Bold;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+.submited-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.submited-btn:hover{
+    background: linear-gradient(to left, tomato, #ff5476);
+}
+span{
+    font-weight: 800;
+}
+
+@media screen and (max-width:768px) {
+
+    .submited {
+        width: 100%;
+        border-radius: 0px;
+        padding: 150px 24px 40px 24px;
+    
+    }
+    .submited-btn{
+        margin-top: 250px;
+    }
+}
+@media screen and (max-width:768px) {
+
+    main{
+        width: 100%;
+        min-height: 100vh;
+    
+        background-color:white;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .container  {
+        width: 100%;
+    
+        background-color: white;
+        border-radius: 0px;
+        padding: 0;
+    
+        flex-direction: column-reverse;
+    
+    }
+    .banner{
+
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .text{
+        margin: 0px 25px 40px 25px;
+    }
+    .text h1{
+        font-size: 42px;
+    }
+}
